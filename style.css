@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Latin', sans-serif;
+}
+@font-face {
+    font-family: 'Dodo';
+    src: url(./Dodo.ttf);
+}
+.container-xxl header{
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.entrance{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    border: 1px solid red;
+}
+
+.logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.bookpizza{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid red;
+    /* margin-left: 8px;
+    margin-right: 8px; */
+}
+
+.bookpizza > p > span::before{
+    content: '\2022';
+    margin: 0 5px;
+    
+}
+
+.bookpizza h5{
+    font-size: 18px;
+}
+
+.bookpizza > p> i{
+    font-size: 12px;
+    color: #FFD200;
+}
+
+.phoneNumber{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-left: 8px;
+    margin-right: 8px; */
+    border: 1px solid red;
+}
+
+.phoneNumber h5{
+    font-size: 18px;
+}
+
+.phoneNumber h4{
+    font-size: 16px;
+    color: #B29999;
+}
+
+
+.enterUser{
+    height: 100%;
+    /* margin-left: 8px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.coin{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    font-weight: 500;
+    border: 1px solid red;
+}
+
+.coin span:hover{
+    color: #e86d42;
+    cursor: pointer;
+}
+
+.coin span:hover ~ svg{
+    width: 26px;
+    height: 26px;
+    transition: 0.2s linear;
+    transform: rotate(16deg);
+}
+
+.coin span:hover ~ svg path{
+    fill: #e86d42;
+}
+
+.enterUser button{
+    width: 30%;
+    height: 44%;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #5c5757;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+}
+
+nav ul{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 0;
+}
+
+nav ul li{
+    list-style: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+nav ul li:hover{
+    color: #e86d42;
+}
+
+nav ul li:nth-of-type(10):before{
+    content: "";
+    display: inline-block;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: red;
+    animation: Change 2s linear infinite;
+}
+
+nav button{
+    width: 10%;
+    padding: 6px 12px;
+    border-radius: 16px;
+    border: none;
+    background-color: rgb(255, 105, 0);
+    color: #fff;
+    cursor: pointer;
+    margin-right: 4%;
+}
+
+nav button:hover{
+    background-color: #e86100;
+}
+
+@keyframes Change {
+    0%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0.4    ;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.cardblock{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.card{
+    width: 100px;
+    height: 200px;
+}
