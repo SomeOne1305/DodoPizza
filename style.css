@@ -196,3 +196,9 @@ nav button:hover{
         opacity: 1;
     }
 }
+
+.signInForm{
+    width: 100%;
+    height: 100vh;
+    background-color: #737373;
+}
