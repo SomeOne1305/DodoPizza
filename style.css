@@ -8,6 +8,9 @@
     font-family: 'Dodo';
     src: url(./Dodo.ttf);
 }
+input[type=radio]{
+    display: none;
+}
 .container-xxl header{
     width: 100%;
     height: 100%;
@@ -115,13 +118,17 @@
     fill: #e86d42;
 }
 
-.enterUser button{
+.enterUser label{
     width: 30%;
     height: 44%;
     border: none;
     border-radius: 20px;
     font-size: 14px;
     color: #5c5757;
+    background-color: #F3F3F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav{
@@ -188,18 +195,4 @@ nav button:hover{
     100%{
         opacity: 1;
     }
-}
-
-.cardblock{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
-}
-
-.card{
-    width: 100px;
-    height: 200px;
 }
